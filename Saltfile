@@ -1,0 +1,6 @@
+salt-ssh:
+  config_dir: ./salt
+  log_level: info
+  wipe_ssh: true
+salt-call:
+  config_dir: ./salt

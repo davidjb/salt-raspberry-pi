@@ -1,0 +1,7 @@
+*.swp
+.vagrant
+.DS_Store
+salt/roots/pillar/private
+salt/etc
+salt/var
+var/

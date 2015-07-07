@@ -1,0 +1,10 @@
+# Used by Vagrant in development
+master: localhost
+id: [hostname]
+file_client: local
+grains:
+  roles:
+    - development
+file_roots:
+  base:
+    - /srv/salt

@@ -1,0 +1,5 @@
+# Used by salt-ssh for host configuration
+[hostid]:
+  host: [hostname]
+  port: 22
+  user: root

@@ -1,0 +1,12 @@
+# Used by salt-ssh for production
+# Only works for v2014.7.0rc4 and above
+root_dir: var
+pki_dir: ./pki
+cachedir: ./cache
+log_file: ./master.log
+file_roots:
+  base:
+    - ./roots/salt
+pillar_roots:
+  base:
+    - ./roots/pillar
