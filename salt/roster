@@ -1,5 +1,12 @@
-# Used by salt-ssh for host configuration
-[hostid]:
-  host: [hostname]
+# Used salt-ssh for host configuration
+pi:
+  host: pi.davidjb.com
   port: 22
-  user: root
+  user: pi
+  sudo: true
+
+pi-camera:
+  host: pi-camera.davidjb.com
+  port: 22
+  user: pi
+  sudo: true

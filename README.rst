@@ -1,13 +1,15 @@
-[hostname] configuration
-========================
-
-This is a template for Salt-SSH. Add Salt states for configuration of your
-targets and adjust this readme accordingly.
+Raspberry Pi configuration
+==========================
 
 Features
 --------
 
-* Add your features here.
+* Configure base packages
+* Configure specific RTC
+* Configure wifi settings
+* Camera packages and installation
+* Timezone configuration
+* sshd configuration (Git environment variables)
 
 Provisioning targets
 --------------------

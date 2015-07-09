@@ -1,0 +1,37 @@
+#
+# interfaces configuration
+#
+# !!! THIS FILE IS MANAGED !!!
+# !!! CHANGES WILL BE LOST !!!
+#
+
+auto lo
+iface lo inet loopback
+
+{%- for interface in interfaces %}
+
+# {{ interface.name }}
+# {{ interface.get('comment','') }}
+#
+{%- if interface.get('enabled',False) %}
+auto {{ interface.name }}
+{%- endif %}
+
+{%- if interface.get('hotplug',False) %}
+allow-hotplug {{ interface.name }}
+{%- endif %}
+
+iface {{ interface.name }} {{ interface.type }} {{ interface.proto }}
+{%- if interface.address is defined %}
+  address {{ interface.address }}
+  netmask {{ interface.netmask }}
+  up /etc/network/routes
+{%- endif %}
+
+{%- if interface.options is defined %}
+{%-   for option in interface.options %}
+  {{ option }}
+{%- endfor %}
+{%- endif %}
+
+{%- endfor %}
