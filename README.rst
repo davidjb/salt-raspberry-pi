@@ -15,6 +15,7 @@ Done
 * CIFS mounts
 * Camera packages and installation
 * Keyboard configuration (US)
+* Editor configuration (EDITOR variable)
 
 Todo
 ~~~~

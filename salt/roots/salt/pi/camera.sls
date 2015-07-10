@@ -3,6 +3,7 @@ include:
   - pi.common.timezone
   - pi.common.locale
   - pi.common.openssh
+  - pi.common.editor
   - pi.common.wifi
   - pi.common.python
   - pi.common.camera
