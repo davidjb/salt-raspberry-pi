@@ -4,12 +4,29 @@ Raspberry Pi configuration
 Features
 --------
 
+Done
+~~~~
+
+* Timezone configuration
+* Configure wifi settings
+* Update state (upgrade packages, rpi-update, reboot)
+* OpenSSH configuration (Git environment variables)
+
+Todo
+~~~~
+
 * Configure base packages
 * Configure specific RTC
-* Configure wifi settings
 * Camera packages and installation
-* Timezone configuration
-* sshd configuration (Git environment variables)
+* CIFS mounts
+
+Configuration extracted from:
+
+* Camera Pi
+* Modem Pi
+* OpenSprinkler Pi
+
+
 
 Provisioning targets
 --------------------
