@@ -3,6 +3,5 @@ motion:
     - installed
   service:
     - enable: true
-    - reload: true
     - watch:
-      - pkg: redis
+      - pkg: motion
