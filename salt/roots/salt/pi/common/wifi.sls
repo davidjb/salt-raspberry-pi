@@ -1,5 +1,5 @@
 include:
-  - .wifi
+  - .network
 
 wifi firmware:
   pkg.installed:
