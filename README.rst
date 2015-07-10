@@ -19,6 +19,7 @@ Todo
 * Configure specific RTC
 * Camera packages and installation
 * CIFS mounts
+* Keyboard configuration
 
 Configuration extracted from:
 
