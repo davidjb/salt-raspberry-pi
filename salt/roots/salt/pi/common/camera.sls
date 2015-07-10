@@ -1,7 +1,7 @@
 # Kernel module for accessing the camera as /dev/video0
-bcm2835-v4l2:
+bcm2835_v4l2:
   kmod.present:
-    persist: true
+    - persist: true
 
 # raspistill, raspivid etc
 pi camera utils:
