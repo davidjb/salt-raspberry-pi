@@ -8,6 +8,7 @@ Done
 ~~~~
 
 * Timezone configuration
+* Locale configuration
 * Configure wifi settings
 * Update state (upgrade packages, rpi-update, reboot)
 * OpenSSH configuration (Git environment variables)
