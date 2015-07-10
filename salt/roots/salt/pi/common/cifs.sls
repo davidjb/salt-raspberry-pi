@@ -22,7 +22,6 @@ cifs-utils:
     - pass_num: {{ mount['pass_num'] }}
     - persist: true
     - mkmnt: true
-    - user: pi
     - require:
       - file: /etc/cifspasswd
       - pkg: cifs-utils
