@@ -1,8 +1,13 @@
+#raspistill, raspivid etc
+pi camera utils:
+  pkg.installed:
+    - name: libraspberrypi-bin
+
 python-picamera:
-  pkg.installed: []
+  pkg.installed
 
 python3-picamera:
-  pkg.installed: []
+  pkg.installed
 
 imagemagick:
-  pkg.installed: []
+  pkg.installed
