@@ -11,15 +11,15 @@ Done
 * Configure wifi settings
 * Update state (upgrade packages, rpi-update, reboot)
 * OpenSSH configuration (Git environment variables)
+* CIFS mounts
+* Camera packages and installation
+* Keyboard configuration (US)
 
 Todo
 ~~~~
 
 * Configure base packages
 * Configure specific RTC
-* Camera packages and installation
-* CIFS mounts
-* Keyboard configuration
 
 Configuration extracted from:
 
