@@ -5,7 +5,7 @@ update packages:
 rpi-update:
   cmd.run:
     - env:
-      - SKIP_WARNING: 'yes'
+      - SKIP_WARNING: '1'
     - require:
       - pkg: update packages
 
