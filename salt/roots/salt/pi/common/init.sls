@@ -1,5 +1,7 @@
 base packages:
   pkg.installed:
     - pkgs:
-      - vim
+      - git
       - tmux
+      - vim
+      - wget
