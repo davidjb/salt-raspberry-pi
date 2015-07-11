@@ -32,6 +32,7 @@ Raspberry Pi-specific
 
 * Raspberry Pi update state (upgrade packages, rpi-update, reboot)
 * Raspberry Pi Camera packages and installation
+* I2C setup and packages
 * DS3231 Real-Time Clock (RTC) configuration
 * `PiFM <https://github.com/rm-hull/pifm>`_ installation
 
