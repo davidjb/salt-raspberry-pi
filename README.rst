@@ -9,8 +9,9 @@ work on other distros.
 It also contains an eclectic collection of tools and applications that are
 useful for a Pi or just plain fun.
 
-Eventually, the common configuration may be refactored into a separate Git
-repository so it can be more easily reused.
+Eventually, the common configuration may be refactored into a formula-style,
+separate Git repository so it can be more easily reused with Pillar data. If
+this interests you, create an issue and let me know!
 
 Features
 --------
@@ -18,23 +19,26 @@ Features
 Generic
 ~~~~~~~
 
-* Installs base packages
-* Timezone configuration
-* Locale configuration
-* Editor configuration (EDITOR variable)
-* OpenSSH configuration (Git environment variables)
-* Configure wifi settings
-* CIFS mounts
-* Keyboard configuration (US)
+* ``pi.common``: Installs base packages
+* ``pi.common.timezone``: Timezone configuration
+* ``pi.common.locale``: Locale configuration
+* ``pi.common.editor``:  Editor configuration (EDITOR variable)
+* ``pi.common.openssh``: OpenSSH configuration (Git environment variables)
+* ``pi.common.wifi``: Configure wifi settings
+* ``pi.common.cifs``: CIFS mounts
+* ``pi.common.keyboard``: Keyboard configuration (US)
+* ``pi.common.rtc``: Real-Time Clock (RTC) configuration
+* ``pi.common.reboot``: Reboot the device
 
 Raspberry Pi-specific
 ~~~~~~~~~~~~~~~~~~~~~
 
-* Raspberry Pi update state (upgrade packages, rpi-update, reboot)
-* Raspberry Pi Camera packages and installation
-* I2C setup and packages
-* DS3231 Real-Time Clock (RTC) configuration
-* `PiFM <https://github.com/rm-hull/pifm>`_ installation
+* ``pi.common.update``: Raspberry Pi update state (upgrade packages, rpi-update, reboot)
+* ``pi.common.camera``: Raspberry Pi Camera packages and installation
+* ``pi.common.i2c``: I2C setup and packages
+* ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
+  Device Tree overlays
+* ``pi.common.pifm``: `PiFM <https://github.com/rm-hull/pifm>`_ installation
 
 Todo
 ~~~~
