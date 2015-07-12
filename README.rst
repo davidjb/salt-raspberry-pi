@@ -34,6 +34,8 @@ Raspberry Pi-specific
 ~~~~~~~~~~~~~~~~~~~~~
 
 * ``pi.common.update``: Raspberry Pi update state (upgrade packages, rpi-update, reboot)
+* ``pi.common.reduce-sd-activity``: Tweak the filesystem for reducing SD card
+  r/w cycles
 * ``pi.common.camera``: Raspberry Pi Camera packages and installation
 * ``pi.common.i2c``: I2C setup and packages
 * ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
