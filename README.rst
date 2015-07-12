@@ -42,16 +42,6 @@ Raspberry Pi-specific
   Device Tree overlays
 * ``pi.common.pifm``: `PiFM <https://github.com/rm-hull/pifm>`_ installation
 
-Todo
-~~~~
-
-Configuration extracted from @davidjb's existing Pis:
-
-* Camera Pi
-* Modem Pi
-* OpenSprinkler Pi
-
-
 
 Provisioning targets
 --------------------
