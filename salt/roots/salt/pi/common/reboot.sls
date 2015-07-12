@@ -1,0 +1,2 @@
+system.reboot:
+  module.wait
