@@ -4,6 +4,8 @@ include:
   - pi.common.locale
   - pi.common.openssh
   - pi.common.editor
+  - pi.common.reduce-sd-activity
+  - pi.common.rtc.ds3231
   - pi.common.wifi
   - pi.common.python
   - pi.common.camera
