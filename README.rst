@@ -41,6 +41,8 @@ Raspberry Pi-specific
   r/w cycles
 * ``pi.common.camera``: Raspberry Pi Camera packages and installation
 * ``pi.common.i2c``: I2C Device Tree overlay, setup and packages
+* ``pi.common.rtc``: General configuration for setting up RTCs (disable
+  fake-hwclock, enable hwclock etc)
 * ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
   Device Tree overlays
 * ``pi.common.pifm``: `PiFM <https://github.com/rm-hull/pifm>`_ installation
