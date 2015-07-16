@@ -5,15 +5,14 @@
 # https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
 
 include:
-  - .
-  - ..reboot
+  - pi.common.reboot
 
 # Enable the DS3231 RTC using Device Tree Overlays
 ds3231 enabled:
   file.append:
     - name: /boot/config.txt
     - text: "dtoverlay=i2c-rtc,ds3231"
-    - require:
-      - module: system.reboot
     - require_in:
       - service: hwclock
+    - watch_in:
+      - module: system.reboot

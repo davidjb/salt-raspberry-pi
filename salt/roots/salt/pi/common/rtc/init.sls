@@ -8,8 +8,7 @@
 # http://www.doxer.org/hwclock-and-11-minute-mode-in-linux/
 
 include:
-  - .ntp
-  - .reboot
+  - pi.common.ntp
 
 # Disable and remove fake-hwclock service
 fake-hwclock removed:
