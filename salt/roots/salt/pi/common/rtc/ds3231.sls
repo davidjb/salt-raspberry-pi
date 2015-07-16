@@ -6,6 +6,7 @@
 
 include:
   - pi.common.reboot
+  - .
 
 # Enable the DS3231 RTC using Device Tree Overlays
 ds3231 enabled:
