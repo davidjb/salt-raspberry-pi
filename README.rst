@@ -29,6 +29,7 @@ Generic
 * ``pi.common.keyboard``: Keyboard configuration (US)
 * ``pi.common.rtc``: Real-Time Clock (RTC) configuration
 * ``pi.common.reboot``: Reboot the device
+* ``pi.common.user``: Remove default passwords from user accounts
 
 Raspberry Pi-specific
 ~~~~~~~~~~~~~~~~~~~~~
