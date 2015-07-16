@@ -4,9 +4,10 @@ include:
   - pi.common.locale
   - pi.common.openssh
   - pi.common.editor
+  - pi.common.wifi
+  - pi.common.user
   - pi.common.reduce-sd-activity
   - pi.common.rtc.ds3231
-  - pi.common.wifi
 
 
 telstra.mobile:
