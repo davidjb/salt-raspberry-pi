@@ -27,7 +27,8 @@ Generic
 * ``pi.common.wifi``: Configure wifi settings
 * ``pi.common.cifs``: CIFS mounts
 * ``pi.common.keyboard``: Keyboard configuration (US)
-* ``pi.common.rtc``: Real-Time Clock (RTC) configuration
+* ``pi.common.rtc``: General configuration for setting up RTCs (disable
+  fake-hwclock, enable hwclock etc) on any environment
 * ``pi.common.reboot``: Reboot the device
 * ``pi.common.user``: Remove default passwords from user accounts
 * ``pi.common.python-smbus``: Python SMBus packages
@@ -40,8 +41,6 @@ Raspberry Pi-specific
   r/w cycles
 * ``pi.common.camera``: Raspberry Pi Camera packages and installation
 * ``pi.common.i2c``: I2C Device Tree overlay, setup and packages
-* ``pi.common.rtc``: General configuration for setting up RTCs (disable
-  fake-hwclock, enable hwclock etc)
 * ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
   Device Tree overlays
 * ``pi.common.usb-power``: Configure USB for maximum current
