@@ -45,6 +45,7 @@ Raspberry Pi-specific
   fake-hwclock, enable hwclock etc)
 * ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
   Device Tree overlays
+* ``pi.common.usb-power``: Configure USB for maximum current
 * ``pi.common.pifm``: `PiFM <https://github.com/rm-hull/pifm>`_ installation
 
 
