@@ -15,6 +15,45 @@ telstra.mobile:
     - target: /home/pi/telstra.mobile
     - user: pi
     - submodules: true
+  virtualenv.managed:
+    - name: /home/pi/telstra.mobile
+    - distribute: false
+    - user: pi
+    - require:
+      - git: telstra.mobile
+  cmd.run:
+    - name: /home/pi/telstra.mobile/bin/pip install -U setuptools
+    - user: pi
+    - require:
+      - virtualenv: telstra.mobile
+  # TODO This won't work with new bootstrap-buildout.py scripts
+  buildout.installed:
+    - name: /home/pi/telstra.mobile
+    - python: /home/pi/telstra.mobile/bin/python
+    - user: pi
+    - require:
+      - cmd: telstra.mobile
+    - watch:
+      - git: telstra.mobile
 
-# Specific Script install
-# Crontab.daily entry
+
+# Specific script install for daily operation
+/etc/cron.daily/send-credit:
+  file.managed:
+    - user: root
+    - group: root
+    - mode: 755
+    - contents_pillar: 'send-credit'
+    - require:
+      - buildout: telstra.mobile
+
+# Customise crontab and bring times closer together
+custom /etc/crontab:
+  file.managed:
+    - name: /etc/crontab
+    - source: salt://pi/templates/crontab
+    - user: root
+    - group: root
+    - mode: 644
+    - require:
+      - file: /etc/cron.daily/send-credit
