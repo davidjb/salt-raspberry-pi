@@ -30,6 +30,7 @@ Generic
 * ``pi.common.rtc``: Real-Time Clock (RTC) configuration
 * ``pi.common.reboot``: Reboot the device
 * ``pi.common.user``: Remove default passwords from user accounts
+* ``pi.common.python-smbus``: Python SMBus packages
 * ``pi.common.crontab``: Move the crontab entries closer together in time
 
 Raspberry Pi-specific
