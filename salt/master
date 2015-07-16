@@ -10,3 +10,7 @@ file_roots:
 pillar_roots:
   base:
     - ./roots/pillar
+ext_pillar:
+  - file_tree:
+      root_dir: ./roots/pillar/private/files
+      follow_dir_links: true
