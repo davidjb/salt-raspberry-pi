@@ -1,11 +1,10 @@
 base:
   '*':
     - base
-  pi:
     - private.base
+    - private.networking
+  pi: []
   pi-camera:
-    - private.base
-    - private.pi-camera
-  opensprinkler:
-    - private.base
+    - private.picamera
+  opensprinkler: []
 
