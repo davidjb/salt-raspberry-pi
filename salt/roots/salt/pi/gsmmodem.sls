@@ -8,6 +8,7 @@ include:
   - pi.common.user
   - pi.common.reduce-sd-activity
   - pi.common.rtc.ds3231
+  - pi.common.virtualenv
 
 
 telstra.mobile:
@@ -21,6 +22,7 @@ telstra.mobile:
     - distribute: false
     - user: pi
     - require:
+      - pkg: virtualenv
       - git: telstra.mobile
   cmd.run:
     - name: /home/pi/telstra.mobile/bin/pip install -U setuptools
