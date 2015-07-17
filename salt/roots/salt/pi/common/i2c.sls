@@ -1,6 +1,3 @@
-include:
-  - .reboot
-
 i2c_dev:
   kmod.present:
     - persist: true
@@ -15,5 +12,3 @@ i2c enabled:
   file.append:
     - name: /boot/config.txt
     - text: "dtparam=i2c_arm=on"
-    - watch_in:
-      - module: system.reboot
