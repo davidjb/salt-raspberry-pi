@@ -1,6 +1,6 @@
 {% for user in pillar.get('users', []) %}
-empty password for {{ user['name'] }}:
+{# Adding extra text to the unique ID breaks the run #}
+{{ user['name'] }}:
   user.present:
-    - name: {{ user['name'] }}
-    - empty_password: True
+    - empty_password: true
 {% endfor %}
