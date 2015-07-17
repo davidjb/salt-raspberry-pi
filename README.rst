@@ -37,6 +37,7 @@ Raspberry Pi-specific
 ~~~~~~~~~~~~~~~~~~~~~
 
 * ``pi.common.update``: Raspberry Pi update state (upgrade packages, rpi-update, reboot)
+* ``pi.common.expand-rootfs``: Expands the root filesystem to fill the SD card
 * ``pi.common.raspi-config``: Remove profile.d script stating you need to run
   raspi-config on SSH login (or running it for you as root)
 * ``pi.common.reduce-sd-activity``: Tweak the filesystem for reducing SD card
