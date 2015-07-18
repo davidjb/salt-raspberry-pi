@@ -47,6 +47,7 @@ Raspberry Pi-specific
 * ``pi.common.rtc.ds3231``: DS3231 Real-Time Clock (RTC) configuration via
   Device Tree overlays
 * ``pi.common.usb-power``: Configure USB for maximum current
+* ``pi.common.heartbeat-led``: Enable activity LED heartbeat via overlays
 * ``pi.common.pifm``: `PiFM <https://github.com/rm-hull/pifm>`_ installation
 
 
