@@ -53,7 +53,8 @@ Raspberry Pi-specific
 Provisioning targets
 --------------------
 
-Provision like so::
+First, configure any relevant private data within ``salt/roots/pillar``. Then,
+provision like so::
 
    salt-ssh [hostname] state.highstate
 
@@ -68,11 +69,3 @@ Requirements
 * If your host is Debian/Ubuntu, you must have ``certifi`` installed::
 
      sudo easy_install certifi
-
-Todo
-----
-
-* Remove ``roots`` symlink once the ``file_roots`` relativity
-  issue is fixed: https://github.com/saltstack/salt/issues/14613
-* Cleanup ``pi.common.wifi`` package install when Salt 2015.8 is released or
-  stable
