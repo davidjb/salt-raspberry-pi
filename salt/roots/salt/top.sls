@@ -12,9 +12,9 @@ base:
   pi:
     - pi.gsmmodem
   pi-camera:
-    - pi.camera
+    - pi.tree-camera
   opensprinkler:
     - pi.opensprinkler
   pi-test:
     - pi.gsmmodem
-    - pi.camera
+    - pi.tree-camera
