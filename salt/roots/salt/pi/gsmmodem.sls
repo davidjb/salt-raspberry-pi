@@ -7,13 +7,11 @@ include:
 # pi user needs access to the ``dialout`` group
 extend:
   pi:
-    user:
-      present:
-        - groups:
-          - pi
-          - dialout
-        - require_in:
-          - buildout: telstra.mobile
+    user.present:
+      - groups:
+        - dialout
+      - require_in:
+        - buildout: telstra.mobile
 
 telstra.mobile:
   git.latest:
