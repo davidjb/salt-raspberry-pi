@@ -74,3 +74,5 @@ Todo
 
 * Remove ``roots`` symlink once the ``file_roots`` relativity
   issue is fixed: https://github.com/saltstack/salt/issues/14613
+* Cleanup ``pi.common.wifi`` package install when Salt 2015.8 is released or
+  stable
