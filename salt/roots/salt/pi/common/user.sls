@@ -1,6 +1,7 @@
-{% for user in pillar.get('users', []) %}
-{# Adding extra text to the unique ID breaks the run #}
-{{ user['name'] }}:
+pi:
   user.present:
     - empty_password: true
-{% endfor %}
+
+root:
+  user.present:
+    - empty_password: true

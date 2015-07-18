@@ -2,7 +2,18 @@ include:
   - pi.common.reduce-sd-activity
   - pi.common.rtc.ds3231
   - pi.common.virtualenv
+  - pi.common.user
 
+# pi user needs access to the ``dialout`` group
+extend:
+  pi:
+    user:
+      present:
+        - groups:
+          - pi
+          - dialout
+        - require_in:
+          - buildout: telstra.mobile
 
 telstra.mobile:
   git.latest:
