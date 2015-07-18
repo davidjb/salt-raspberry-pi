@@ -7,5 +7,6 @@ base:
   pi-camera:
     - private.picamera
   opensprinkler: []
-  pi-test: []
+  pi-test:
+    - private.picamera
 
