@@ -31,6 +31,10 @@ Features
 
   * OpenSprinkler Pi: ...
 
+* Add states for all other device tree overlays:
+  https://github.com/raspberrypi/firmware/tree/master/boot/overlays
+  https://www.raspberrypi.org/forums/viewtopic.php?uid=121689&f=29&t=97314
+
 
 
 
