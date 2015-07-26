@@ -4,15 +4,6 @@ include:
   - pi.common.virtualenv
   - pi.common.user
 
-# pi user needs access to the ``dialout`` group
-extend:
-  pi:
-    user.present:
-      - groups:
-        - dialout
-      - require_in:
-        - buildout: telstra.mobile
-
 telstra.mobile:
   git.latest:
     - name: https://github.com/davidjb/telstra.mobile.git
@@ -38,6 +29,7 @@ telstra.mobile:
     - user: pi
     - require:
       - cmd: telstra.mobile
+      - user: pi
     - watch:
       - git: telstra.mobile
 
