@@ -16,9 +16,3 @@ opensprinkler:
   port: 22
   user: pi
   sudo: true
-
-pi-shared:
-  host: pi2.davidjb.com
-  port: 22
-  user: pi
-  sudo: true

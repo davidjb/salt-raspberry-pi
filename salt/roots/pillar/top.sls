@@ -3,10 +3,8 @@ base:
     - base
     - private.base
     - private.networking
-  pi: []
+  pi:
+    - private.picamera
   pi-camera:
     - private.picamera
   opensprinkler: []
-  pi-test:
-    - private.picamera
-

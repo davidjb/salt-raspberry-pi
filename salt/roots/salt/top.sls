@@ -11,10 +11,8 @@ base:
     - pi.common.wifi
   pi:
     - pi.gsmmodem
+    - pi.tree-camera
   pi-camera:
     - pi.tree-camera
   opensprinkler:
     - pi.opensprinkler
-  pi-test:
-    - pi.gsmmodem
-    - pi.tree-camera
