@@ -9,7 +9,7 @@ python3-pip:
 
 virtualenv install:
   cmd.run:
-    - name: pip-3.2 install virtualenv
+    - name: pip3 install virtualenv
     - require:
       - pkg: python3-pip
     - unless: test -x /usr/local/bin/virtualenv-3.2
