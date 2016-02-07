@@ -57,7 +57,7 @@ Provisioning targets
 First, configure any relevant private data within ``salt/roots/pillar``. Then,
 provision like so::
 
-   salt-ssh [hostname] state.highstate
+   salt-ssh [hostname] state.apply
 
 Identifiers for this command come from the Salt roster file (``salt/roster``).
 
