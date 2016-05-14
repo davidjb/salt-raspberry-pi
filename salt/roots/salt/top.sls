@@ -12,6 +12,7 @@ base:
   pi:
     - pi.gsmmodem
     - pi.tree-camera
+    - pi.temperature-sensors
   pi-camera:
     - pi.tree-camera
   opensprinkler:
