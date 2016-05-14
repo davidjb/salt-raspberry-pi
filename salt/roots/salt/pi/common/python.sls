@@ -1,4 +1,18 @@
+python:
+  pkg:
+    - installed
+
+# Makes pip_state available
+python-pip:
+  pkg.installed:
+    - require:
+      - pkg: python
+
 python3:
+  pkg:
+    - installed
+
+python3-dev:
   pkg:
     - installed
 
