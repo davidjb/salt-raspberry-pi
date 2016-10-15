@@ -54,6 +54,7 @@ growtreesgrow regular operation:
     - mode: 700
     - contents: |
         #!/bin/bash
+        sudo mount -a
         source /home/pi/growtreesgrow/.env
         /home/pi/growtreesgrow/bin/upload-pi-photo -i /mnt/photos -c /home/pi/growtreesgrow/comments.yaml --logfile /home/pi/growtreesgrow/upload.log
     - require:
