@@ -26,6 +26,8 @@ Generic
 * ``pi.common.openssh``: OpenSSH configuration (Git environment variables)
 * ``pi.common.wifi``: Configure wifi settings
 * ``pi.common.cifs``: CIFS mounts
+* ``pi.common.sshfs``: SSHFS mounts
+* ``pi.common.ssh``: SSH key generation
 * ``pi.common.keyboard``: Keyboard configuration (US)
 * ``pi.common.rtc``: General configuration for setting up RTCs (disable
   fake-hwclock, enable hwclock etc) on any environment
