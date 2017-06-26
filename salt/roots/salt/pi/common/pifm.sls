@@ -9,6 +9,6 @@ make pifm:
   cmd.wait:
     - name: make
     - cwd: /home/pi/pifm
-    - user: pi
+    - runas: pi
     - watch:
       - git: pifm source
