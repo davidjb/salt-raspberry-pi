@@ -5,7 +5,7 @@ include:
   - pi.common.python
   - pi.common.camera
   - pi.common.camera-disable-led
-  - pi.common.cifs
+  - pi.common.sshfs
   - pi.common.virtualenv
   - pi.common.user
 
