@@ -66,7 +66,7 @@ Identifiers for this command come from the Salt roster file (``salt/roster``).
 Requirements
 ------------
 
-* Salt 2015.5.4 (or latest ``2015.5`` if this isn't yet released)
+* Salt 2016.3.6+ (may work on earlier versions)
 * Your *master* (the computer running Salt) must have root-level SSH access to
   the given host via key-based authentication.
 * If your host is Debian/Ubuntu, you must have ``certifi`` installed::
